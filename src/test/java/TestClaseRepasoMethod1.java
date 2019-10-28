@@ -1,21 +1,19 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.Test;
 
 public class TestClaseRepasoMethod1 {
 	RepasoClass repasoClass=new RepasoClass();
 	@Test
-	public void test_failException1() {
-		String param1="exception";
-		Exception ex=assertThrows(Exception.class,()-> repasoClass.method1(param1, "hola"));
-		assertEquals(null, ex.getMessage());
+	public void test_failException1() throws Exception {
+		String param1="false";
+		assertEquals(false, repasoClass.method1(param1,"hola"));
+
 	}
 	@Test
-	public void test_failException2() {
-		String param2="exception";
-		Exception ex=assertThrows(Exception.class,()-> repasoClass.method1("hola",param2));
-		assertEquals(null, ex.getMessage());
+	public void test_failException2() throws Exception {
+		String param2="false";
+		assertEquals(false, repasoClass.method1("adios",param2));
 	}
 	
 	@Test
