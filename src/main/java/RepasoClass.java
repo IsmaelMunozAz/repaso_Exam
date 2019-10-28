@@ -4,8 +4,8 @@ public class RepasoClass {
 		// TODO Auto-generated constructor stub
 	}
 	public boolean method1(String param1,String param2) throws Exception {
-		if(param1.equals("false") || param2.equals("false"))
-			return false;
+		if(param1.equals("exception") || param2.equals("exception"))
+			throw new Exception();
 		if(param1.equals(param2))
 			return true;
 		return false;
