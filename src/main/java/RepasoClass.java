@@ -24,6 +24,15 @@ public class RepasoClass {
 		}
 		return resultado;
 	}
+	public int method4(String param,int valor)throws Exception {
+		if(param.equals("exception"))
+			throw new Exception();
+		if(param.equals("valor")) {
+			valor=valor*9;
+		}
+		valor=valor+valor;
+		return valor;
+	}
 	public class ConvertInt {
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
