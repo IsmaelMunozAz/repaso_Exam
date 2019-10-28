@@ -26,7 +26,7 @@ public class RepasoClass {
 	}
 <<<<<<< HEAD
 	public boolean method5(String param1, String param2) throws Exception{
-		if(param1==null && param2==null) {
+		if(param1==null || param2==null) {
 			throw new Exception();
 		}
 =======
