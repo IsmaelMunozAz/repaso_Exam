@@ -32,7 +32,13 @@ public class RepasoClass {
 		}
 		valor=valor+valor;
 		return valor;
-	}
+
+	} 
+	public boolean method5(String param1, String param2) throws Exception{
+		if(param1==null || param2==null) {
+			throw new Exception();
+		}
+		return param1.equals(param2);
 	public class ConvertInt {
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
