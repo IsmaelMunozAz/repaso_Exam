@@ -24,10 +24,14 @@ public class RepasoClass {
 		}
 		return resultado;
 	}
+<<<<<<< HEAD
 	public boolean method5(String param1, String param2) throws Exception{
 		if(param1==null && param2==null) {
 			throw new Exception();
 		}
+=======
+	public boolean method5(String param1, String param2) {
+>>>>>>> parent of e7d0eb2... codigo_E_bien
 		return param1.equals(param2);
 	}
 	public class ConvertInt {
