@@ -24,6 +24,9 @@ public class RepasoClass {
 		}
 		return resultado;
 	}
+	public boolean method5(String param1, String param2) {
+		return param1.equals(param2);
+	}
 	public class ConvertInt {
 		public int convert(char[] str) throws Exception{
 			if (str.length > 6) 
